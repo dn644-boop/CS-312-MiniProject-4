@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<div style="padding: 10px;" style="gap: 10px;">
+<div class="bg-success bg-gradient w-50 p-5 text-dark" style="padding: 30px;">
+    <div style="text-align: center; font-family: georgia;"><h1 class ="title" draggable="true">
+        Welcome to Vlogsite!
+    </h1></div>
+</div>
+<div class="col-sm-4" class="card" style="word-wrap: break-word; width: 1000px; border: 5px solid darkcyan; background-color: cyan;">
+    <h2 class="card-title">Some Totally Amazing Vlogs!</h2>
+    <table class="table" style = "width: 50%" id ="skill-table">
+        <thead>
+        <tr>
+            <th scope="col">User</th>
+            <th scope="col">Post Title</th>
+            <th scope="col">Post Content</th>
+            <th scope="col">Time Created</th>
+        </tr>
+    </table>
+    <form action="/submit_page.php">
+        <label for="title">The Title Goes Here:</label>
+        <input type="text" id="title"><br>
+        <label for="content">What Happened Goes Here:</label>
+        <input type="text" id="content"><br>
+        <script>
+        </script>
+        <a><button type="button" onclick="RecordPost()" class="btn">Submit</button></a>
+    </form>
+    <a href="index.html">Log Out</a>
+</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="vlog3.js"></script>
+</body>
+</html>
